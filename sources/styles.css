@@ -1,0 +1,62 @@
+#image a img {
+    box-shadow: 0 0 8px #292929;
+    max-width: none !important;
+    max-height: none !important;
+    height: 100vh;
+}
+
+body {
+    background-color: #474747;
+    margin: 0;
+}
+
+#image {
+    text-align: center;
+}
+
+.test-div {
+    width: 132px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+}
+
+.test-animation {
+    transition: background-color 0.2s ease-in-out;
+    background-color: transparent;
+}
+
+.test-animation:hover {
+    background-color: #292929;
+}
+
+.to-left {
+    left: 0;
+}
+
+.to-right {
+    right: 0;
+}
+
+.arrow-base {
+    transition: background-color 0.2s ease-in-out;
+    background-color: #a0a0a0;
+    width: 28px;
+    height: 48px;
+    position: fixed;
+    top: 48px;
+}
+
+.test-animation:hover .arrow-base{
+    background-color: #ffffff;
+}
+
+.arrow-left {
+    -webkit-clip-path: polygon(100% 0, 40% 50%, 100% 100%, 0 50%);
+    left: 48px;
+}
+
+.arrow-right {
+    -webkit-clip-path: polygon(0 100%, 60% 50%, 0 0, 100% 50%);
+    right: 48px;
+}
