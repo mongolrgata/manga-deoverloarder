@@ -22,7 +22,7 @@
     divRight.className = 'test-div test-animation to-right';
     body.appendChild(divRight);
     divRight.addEventListener("click", function () {
-        prevButton.click();
+        nextButton.click();
     });
     var arrowRight = document.createElement('div');
     arrowRight.className = 'arrow-base arrow-right';
@@ -32,7 +32,7 @@
     divLeft.className = 'test-div test-animation to-left';
     body.appendChild(divLeft);
     divLeft.addEventListener("click", function () {
-        nextButton.click();
+        prevButton.click();
     });
     var arrowLeft = document.createElement('div');
     arrowLeft.className = 'arrow-base arrow-left';
